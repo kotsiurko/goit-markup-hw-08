@@ -1,0 +1,32 @@
+.works {
+  padding-top: 0;
+}
+
+.works__list {
+  display: flex;
+}
+
+.works__item {
+  position: relative;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.works__label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
