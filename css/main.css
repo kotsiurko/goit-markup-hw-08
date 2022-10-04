@@ -59,8 +59,23 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .socials {
@@ -186,6 +201,21 @@ span {
 .works {
   padding-top: 0;
 }
+@media screen and (min-width: 480px) {
+  .works {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works {
+    display: block;
+  }
+}
 
 .works__list {
   display: -webkit-box;
@@ -222,36 +252,35 @@ span {
   color: var(--white-color);
 }
 
-.features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .features__item {
-  width: 270px;
-  margin-right: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  gap: 30px;
 }
 .features__item:last-child {
-  margin-right: 0px;
+  margin-bottom: 0px;
 }
-
-.features__title {
-  color: var(--text-color-secondary);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 354px;
+  }
 }
-
-.features__label {
-  line-height: 1.71;
-  margin-top: 0;
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .features__item {
+    margin-bottom: 0px;
+    width: 270px;
+  }
 }
 
 .features__icon {
@@ -267,6 +296,29 @@ span {
   height: 120px;
   background-color: var(--bg-color-primary);
   margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.features__title {
+  text-align: center;
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .features__title {
+    text-align: left;
+  }
+}
+
+.features__label {
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team {
@@ -929,21 +981,6 @@ address li:last-of-type {
 .icon-send {
   margin-left: 10px;
   fill: var(--white-color);
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: var(--text-color-secondary);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
 }
 
 .site-contacts {

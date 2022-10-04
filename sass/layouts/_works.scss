@@ -1,5 +1,17 @@
 .works {
   padding-top: 0;
+
+  @media screen and (min-width: $mobile) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .works__list {
