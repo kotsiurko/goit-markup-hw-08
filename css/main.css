@@ -766,6 +766,14 @@ header {
   fill: currentColor;
 }
 
+.client-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .client-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,7 +784,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
@@ -786,6 +794,18 @@ header {
 }
 .client-link:hover, .client-link:focus {
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .client-link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-link {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .client-link .client-icon {
