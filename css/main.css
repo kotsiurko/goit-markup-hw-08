@@ -198,6 +198,34 @@ span {
   color: var(--white-color);
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  outline: 1px solid red;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--text-color-secondary);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1717857143;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.1719444444;
+  }
+}
+
 .works {
   padding-top: 0;
 }
@@ -329,20 +357,40 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
   background-color: var(--white-color);
-  margin-right: 30px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team__item:last-child {
-  margin-right: 0px;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    margin-bottom: 0px;
+    width: 270px;
+  }
 }
 
 .team__description {
+  width: 100%;
   padding: 30px 24px;
 }
 
@@ -352,7 +400,7 @@ span {
   color: var(--text-color-secondary);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.171875;
   text-align: center;
 }
 
