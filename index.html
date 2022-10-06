@@ -100,7 +100,7 @@
         <ul class="site-contacts">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon">
+              <svg class="icon" width="16" height="12">
                 <use href="./images/icons.svg#ci-envelope"></use>
               </svg>
               info@devstudio.com
@@ -108,7 +108,7 @@
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="link">
-              <svg class="icon">
+              <svg class="icon" width="10" height="16">
                 <use href="./images/icons.svg#ci-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -286,6 +286,7 @@
                 <img
                   src="./images/works/box1-@1x.jpg"
                   alt="Програміст, що працює за робочим столом"
+                  loading="lazy"
                 />
               </picture>
               <p class="works__label">Десктопні додатки</p>
@@ -302,6 +303,7 @@
                 <img
                   src="./images/works/box2-@1x.jpg"
                   alt="Web UI-дизайнер за командною роботою"
+                  loading="lazy"
                 />
               </picture>
               <p class="works__label">Мобільні додатки</p>
@@ -318,6 +320,7 @@
                 <img
                   src="./images/works/box3-@1x.jpg"
                   alt="Веб дизайнер, що працює з кольоровою гамою на графічному планшеті"
+                  loading="lazy"
                 />
               </picture>
               <p class="works__label">Дизайнерські рішення</p>
@@ -358,11 +361,10 @@
                 <img
                   src="./images/team/demianenko-sm-@1x.jpg"
                   alt="Ігор Дем'яненко"
-                  width="450px"
+                  width="450"
+                  loading="lazy"
                 />
               </picture>
-
-              <!-- <img src="./images/demianenko.jpg" alt="Ігор Дем'яненко" /> -->
 
               <div class="team__description">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -426,11 +428,10 @@
                 <img
                   src="./images/team/riepina-sm-@1x.jpg"
                   alt="Ольга Рєпіна"
-                  width="450px"
+                  width="450"
+                  loading="lazy"
                 />
               </picture>
-
-              <!-- <img src="./images/riepina.jpg" alt="Ольга Рєпіна" /> -->
 
               <div class="team__description">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -494,11 +495,10 @@
                 <img
                   src="./images/team/tarasov-sm-@1x.jpg"
                   alt="Микола Тарасов"
-                  width="450px"
+                  width="450"
+                  loading="lazy"
                 />
               </picture>
-
-              <!-- <img src="./images/tarasov.jpg" alt="Микола Тарасов" /> -->
 
               <div class="team__description">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -562,11 +562,10 @@
                 <img
                   src="./images/team/iermakov-sm-@1x.jpg"
                   alt="Михайло Єрмаков"
-                  width="450px"
+                  width="450"
+                  loading="lazy"
                 />
               </picture>
-
-              <!-- <img src="./images/iermakov.jpg" alt="Михайло Єрмаков" /> -->
 
               <div class="team__description">
                 <h3 class="team__title">Михайло Єрмаков</h3>
@@ -676,12 +675,16 @@
                   >
                 </li>
                 <li>
-                  <a href="mailto:info@devstudio.com" class="contacts__link"
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contacts__link contacts__link--darker"
                     >info@devstudio.com</a
                   >
                 </li>
                 <li>
-                  <a href="tel:+380961111111" class="contacts__link"
+                  <a
+                    href="tel:+380961111111"
+                    class="contacts__link contacts__link--darker"
                     >+38 096 111 11 11</a
                   >
                 </li>

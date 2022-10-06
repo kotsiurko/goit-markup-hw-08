@@ -21,6 +21,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color var(--animation);
+  align-items: center;
 }
 
 .site-contacts a:hover {
@@ -28,8 +29,8 @@
 }
 
 .site-contacts .icon {
-  height: 16px;
-  width: 16px;
+  // height: 16px;
+  // width: 16px;
   margin-right: 10px;
   fill: currentColor;
 }

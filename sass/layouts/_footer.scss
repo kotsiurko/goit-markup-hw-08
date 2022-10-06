@@ -75,6 +75,10 @@ footer a {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+
+  &--darker {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .contacts__link {
@@ -112,19 +116,19 @@ address li:last-of-type {
 
   @media screen and (min-width: $desktop) {
     flex-direction: row;
+    gap: 12px;
   }
 }
 
 .subscription__input {
   padding: 15px 16px;
-  max-width: 358px;
+  max-width: 450px;
   width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   background-color: var(--bg-color-secondary);
-  margin-right: 12px;
   outline: none;
 }
 
