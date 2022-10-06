@@ -1,0 +1,148 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  @media screen and (min-width: 320px) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon__menu {
+  display: none;
+}
+.menu-button.is-open + .mobile-menu {
+  transform: translateX(0);
+}
+.menu-button + .mobile-menu {
+  transform: translateX(200%);
+}
+.mobile-menu {
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white-color);
+  transition: transform var(--animation);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  @media screen and (min-width: 320px) {
+    padding: 25px;
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $mobile) {
+    padding: 48px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.list-button {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.list-button-icon {
+  transition: fill var(--animation);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-link.active {
+  color: var(--accent-color);
+}
+
+.mobile-link {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--logo-second-color);
+  text-decoration: none;
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.mobile-contacts {
+  margin-top: auto;
+}
+.mobile-social {
+  margin-top: 64px;
+  display: flex;
+  @media screen and (min-width: 320px) {
+    gap: 5px;
+  }
+  @media screen and (min-width: $tablet) {
+    gap: 10px;
+  }
+}
+.mobile-social-link {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+  @media screen and (min-width: $mobile) {
+    font-size: 18px;
+  }
+}
+.mobile-social-item:not(:last-child) {
+  padding-right: 5px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-phone-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  color: var(--accent-color);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.mobile-email {
+  margin-top: 32px;
+}
+.mobile-email-link,
+.mobile-phone-link {
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.mobile-email-link {
+  color: var(--text-color-primary);
+  text-decoration: none;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+}

@@ -5,7 +5,44 @@ footer {
 
 .footer {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+}
+
+.footer__container-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: start;
+    margin-bottom: 0;
+    margin-right: 93px;
+  }
+}
+
+.footer__contacts {
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    margin-right: 60px;
+  }
 }
 
 .footer__logo {
@@ -16,8 +53,11 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
   transition: color var(--animation);
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo:hover,
@@ -58,23 +98,27 @@ address li:last-of-type {
   margin-bottom: 0;
 }
 
-.footer__socials {
-  margin-left: 70px;
-}
-
 /* FOOTER FORM */
 .subscription {
-  margin-left: auto;
+  width: 100%;
 }
 
 .subscription__form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   margin-top: 20px;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .subscription__input {
   padding: 15px 16px;
-  width: 358px;
+  max-width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
@@ -82,6 +126,14 @@ address li:last-of-type {
   background-color: var(--bg-color-secondary);
   margin-right: 12px;
   outline: none;
+}
+
+.social-title {
+  display: block;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .subscription__button {

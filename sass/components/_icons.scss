@@ -1,11 +1,12 @@
 .socials {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    
-    &--footer {
-        margin: 20px auto 30px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  &--footer {
+    margin: 20px auto 30px;
+  }
 }
 
 .socials__link {
@@ -44,8 +45,3 @@
     transition: fill var(--animation);
   }
 }
-
-
-
-
-

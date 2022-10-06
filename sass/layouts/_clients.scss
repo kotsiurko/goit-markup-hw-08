@@ -1,5 +1,6 @@
 .client-list {
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -47,42 +48,3 @@
 .client-link:focus .client-icon {
   fill: var(--accent-color);
 }
-
-// ------------------------------------
-// OLD STYLES
-// ------------------------------------
-
-// .client-list {
-//   display: flex;
-//   gap: 30px;
-// }
-
-// .client-icon {
-//   fill: currentColor;
-// }
-
-// .client-link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 170px;
-//   height: 92px;
-//   color: #afb1b8;
-//   border: 1px solid #afb1b8;
-//   border-radius: 4px;
-//   transition: border var(--animation);
-
-//   &:hover,
-//   &:focus {
-//     border: 1px solid var(--accent-color);
-//   }
-// }
-
-// .client-link .client-icon {
-//   transition: fill var(--animation);
-// }
-
-// .client-link:hover .client-icon,
-// .client-link:focus .client-icon {
-//   fill: var(--accent-color);
-// }

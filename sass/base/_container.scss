@@ -1,23 +1,20 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  //   width: 1200px;
-  //   padding: 0 15px;
+
   padding-left: 15px;
   padding-right: 15px;
 
-  // Need to be commented
-  //   outline: 1px solid red;
-
+  max-width: 320px;
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    max-width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    max-width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    max-width: $desktop;
   }
 }
